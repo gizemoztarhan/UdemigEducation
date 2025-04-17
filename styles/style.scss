@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import "./variables";
+@import "./header";
+@import "./mixin";
+@import "./home";
+@import "./education";
+@import "./about-us";
+@import "./popular";
+@import "./contact-us";
+@import "./footer";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+a{
+    color: $text-color;
+}
+
+
+.flexBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.transition {
+    transition: all 0.5s ease-in-out;
+  }
+
+.btn{
+    background-color: $main-color;
+    padding: 1.3rem 4rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    @extend.transition;
+    &:hover{
+        border: 2px solid white;
+        color: $text-color;
+        background-color: transparent;
+        transform: translateX(1rem);
+    }
+
+}
+
+section{
+    padding:70px 17% 60px ;
+}

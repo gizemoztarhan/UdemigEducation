@@ -1,0 +1,42 @@
+.home{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/group.jpeg");
+    background-position:bottom center;
+    background-size: cover;
+    height: 100vh;
+    position:relative;
+   .home-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+   
+   h5{
+    color: $main-color;
+    font-size: $p-font;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+   }
+   h1{
+    color: $text-color;
+    font-size: $h1-font;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    @include tablet {
+        font-size: $h2-font;
+      }
+
+   }
+   p{
+    color: $gray;
+    font-size: $p-font;
+    margin-bottom: 3.5rem;
+   }
+
+
+}
+}

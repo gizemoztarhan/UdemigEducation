@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+header {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 27px 17px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+header .logo {
+  font-size: 3.3rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+@media (max-width: 1300px) {
+  header .logo {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 800px) {
+  header .logo {
+    font-size: 2rem;
+  }
+}
+header .logo span {
+  color: #ffa343;
+}
+@media (max-width: 1300px) {
+  header nav {
+    display: none !important;
+  }
+}
+header nav a {
+  margin: 15px 22px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+}
+header nav a:hover {
+  scale: 1.2;
+  color: #ffa343;
+}
+header .header-right a {
+  font-size: 2rem;
+  margin: 0 18px 0 5px;
+}
+@media (max-width: 800px) {
+  header .header-right a {
+    display: none !important;
+  }
+}
+header .header-right a:hover {
+  color: #ffa343;
+  transform: translateY(-3px);
+}
+header .header-right a:first-child {
+  font-size: 1.6rem;
+  margin-right: 20px;
+}
+header .header-right #menu-btn {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #ffffff;
+}
+header .header-right #menu-btn:hover {
+  color: #ffa343;
+  transform: translateY(-3px);
+}
+@media (max-width: 1300px) {
+  header .header-right #menu-btn {
+    display: block !important;
+  }
+}
+header nav.active {
+  display: block !important;
+  position: fixed;
+  right: 10px;
+  top: 120%;
+  display: flex !important;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 20px 0;
+  border-radius: 16px;
+}
+header nav.active a {
+  font-size: 1.5rem;
+}
+header nav.active a:hover {
+  scale: 1.1;
+}
+
+.home {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/group.jpeg");
+  background-position: bottom center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.home .home-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.home .home-text h5 {
+  color: #ffa343;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.home .home-text h1 {
+  color: #ffffff;
+  font-size: 9.6rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+@media (max-width: 800px) {
+  .home .home-text h1 {
+    font-size: 4.8rem;
+  }
+}
+.home .home-text p {
+  color: rgba(255, 255, 255, 0.6705882353);
+  font-size: 1.6rem;
+  margin-bottom: 3.5rem;
+}
+
+#education .education-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  gap: 40px;
+}
+#education .education-content .education-card {
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+#education .education-content .education-card-image {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+#education .education-content .education-card-image img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#education .education-content .education-card-image img:hover {
+  scale: 1.2;
+}
+#education .education-content .education-card h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#education .education-content .education-card h4:hover {
+  color: #ffa343;
+}
+
+.about-us {
+  justify-content: center;
+  gap: 15rem;
+}
+@media (max-width: 1300px) {
+  .about-us {
+    flex-direction: column;
+  }
+}
+.about-us-image {
+  flex: 1;
+}
+.about-us-image img {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+}
+.about-us-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-us-text h5 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #ffa343;
+}
+.about-us-text h2 {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.about-us-text p {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.6705882353);
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.popular-courses .center {
+  text-align: center;
+}
+.popular-courses .center h2 {
+  font-size: 4.8rem;
+  font-weight: 800;
+}
+.popular-courses .center .btn {
+  margin-top: 3rem;
+}
+.popular-courses-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 3rem;
+  margin-top: 5rem;
+}
+.popular-courses-content .card {
+  position: relative;
+}
+.popular-courses-content .card:hover > img {
+  scale: 1.05;
+}
+.popular-courses-content .card img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  filter: brightness(70%);
+}
+.popular-courses-content .card .info {
+  position: absolute;
+  bottom: 40px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.popular-courses-content .card .info h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+}
+.popular-courses-content .card .info h4 i {
+  color: #ffa343;
+}
+
+.contact-us {
+  padding: 20px;
+  width: 90%;
+}
+@media (max-width: 1300px) {
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contact-us-image {
+  flex: 1;
+  padding: 30px;
+}
+.contact-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.contact-us-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact-us-form label {
+  margin-bottom: 6px;
+  font-size: 1.6rem;
+}
+.contact-us-form input, .contact-us-form button {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-us-form button {
+  cursor: pointer;
+  background-color: #ffa343;
+  border: 1px solid transparent;
+  font-weight: bold;
+  color: white;
+}
+.contact-us-form button:hover {
+  background-color: #a48032;
+}
+
+.footer {
+  padding: 20px 30px;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 5rem;
+}
+.footer-content-box {
+  display: flex;
+  flex-direction: column;
+}
+.footer-content-box a {
+  font-size: 1.5rem;
+  color: #979797;
+  margin-bottom: 1.5rem;
+}
+.footer-content-box a:hover {
+  color: #ffffff;
+  transform: translateX(-5px);
+}
+.footer-content-box h3 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.footer-content-box .social {
+  display: flex;
+  gap: 10px;
+}
+.footer-content-box .social a {
+  height: 45px;
+  width: 45px;
+  background-color: #202020;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+}
+.footer-content-box .social a:hover {
+  background-color: #ffa343;
+  color: #000000;
+}
+.footer-copyright {
+  text-align: center;
+  color: #979797;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+}
+
+.flexBox, header, header nav, header .header-right, #education .education-content .education-card, .about-us, .contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transition, .btn, header nav a, header .header-right a, header .header-right #menu-btn, #education .education-content .education-card-image img, #education .education-content .education-card h4, .popular-courses-content .card img, .contact-us-form button, .footer-content-box a {
+  transition: all 0.5s ease-in-out;
+}
+
+.btn {
+  background-color: #ffa343;
+  padding: 1.3rem 4rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 2px solid white;
+  color: #ffffff;
+  background-color: transparent;
+  transform: translateX(1rem);
+}
+
+section {
+  padding: 70px 17% 60px;
+}/*# sourceMappingURL=style.css.map */
